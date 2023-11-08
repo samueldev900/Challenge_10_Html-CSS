@@ -20,17 +20,139 @@
     padding: 0px;
     margin: 0px;
 }
+html,body{
+    height: 100%;
+}
 body{
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center ;
     justify-content: center;
-    height: 100vh;
     background: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    background-attachment: fixed;
+    font-family: 'Kumbh Sans',sans-serif;
+    color: var(--cor1);
 }
 main{
-    width: 85vw;
+    
+    position: relative;
+    text-align: center;
+    width: 65vw;
+    height: auto;
     padding: 15px;
-    background-color: white;
     border-radius: 20px;
+    padding-top: 150px;
+
+
+    
+    background-size: 250px;
+    background-color: white;
+}
+.image-box{
+    position:absolute;
+    top: 10px;
+    left: calc(50% - 125px);
+}
+
+.image-woman{
+    position:absolute;
+    height: 200px;
+    width: 250px;
+    top: -110px;
+    left: calc(50% - 125px);
+}
+
+
+div > p{
+
+    font-size: 11pt;
+}
+div > img{
+
+    cursor: pointer;
+
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    height: 50px;
+    margin: auto;
+    
+}
+label{
+    border-bottom: 1px solid var(--cor7);
+}
+label > p{
+    text-align: left;
+    margin: auto;
+}
+article h1{
+    margin-bottom: 25px ;
+    font-size: 39px;
+}
+article{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.word-ocult{
+    transition: 0.2s;
+    display: block;
+    font-size: 0px;
+    padding: 5px;
+    
+    width: 60vw;
+    border-bottom: 1px solid var(--cor7);
+}
+.menu img{
+    transition: 0.4s ease-in-out;
+}
+input:checked + label #arrow{
+    transition: 0.4s ease-in-out;
+    transform: rotate(180deg);
+}
+input:checked + label #arrow1{
+    transition: 0.4s ease-in-out;
+    transform: rotate(180deg);
+}
+input:checked + label #arrow2{
+    transition: 0.4s ease-in-out;
+    transform: rotate(180deg);
+}
+input:checked + label #arrow3{
+    transition: 0.4s ease-in-out;
+    transform: rotate(180deg);
+}
+input:checked + label #arrow4{
+    transition: 0.4s ease-in-out;
+    transform: rotate(180deg);
+
+}
+
+input{
+    display: none;
+}
+
+input:checked  + label .word-ocult{
+    transition: 0.3s ease-in-out;
+    font-size: 13px;
+ 
+}
+
+input:checked  + label .menu{
+    font-weight: 700;
+}
+
+input:checked  + label .image-woman{
+    transform: translate(-50%,0%);
+}
+.image-desktop{
+    display: none;
+}
+.boxer{
+
+    display: none;
+
 }
