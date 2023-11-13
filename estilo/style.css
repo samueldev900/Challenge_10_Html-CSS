@@ -96,6 +96,16 @@ article{
     width: 60vw;
     border-bottom: 1px solid var(--cor7);
 }
+.word-ocult1{
+    transition: 0.2s;
+    display: block;
+    font-size: 0px;
+    padding: 5px;
+    
+    width: 60vw;
+    border-bottom: 1px solid var(--cor7);
+}
+
 .menu img{
     transition: 0.4s ease-in-out;
 }
@@ -122,9 +132,17 @@ input:checked + label #arrow4{
 input{
     display: none;
 }
+input:checked  + label .word-ocult1{
+    transition: 0.3s ease-in-out;
+    font-size: 13px;
+}
 input:checked  + label .word-ocult{
     transition: 0.3s ease-in-out;
     font-size: 13px;
+}
+input:checked + label ~ .word-ocult1 {
+    font-size: 0px;
+    transition: 0.3s ease-in-out;
 }
 input:checked  + label .menu{
     font-weight: 700;

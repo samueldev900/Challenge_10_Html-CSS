@@ -29,8 +29,8 @@
         align-items: center;
         justify-content: end;
         position: relative;
-        height: 600px;
-        width: 950px;
+        height: 550px;
+        width: 850px;
         padding: 0;
         margin: 0;
         background: url(../images/illustration-woman-online-desktop.svg), url(../images/bg-pattern-desktop.svg);
@@ -51,7 +51,7 @@
         width: 500px;
         
     }
-    .menu,.word-ocult{
+    .menu,.word-ocult,.word-ocult1{
 
         width: 400px;
     }
