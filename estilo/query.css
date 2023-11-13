@@ -29,8 +29,8 @@
         align-items: center;
         justify-content: end;
         position: relative;
-        height: 550px;
-        width: 850px;
+        height: 500px;
+        width: 900px;
         padding: 0;
         margin: 0;
         background: url(../images/illustration-woman-online-desktop.svg), url(../images/bg-pattern-desktop.svg);
@@ -49,7 +49,10 @@
     }
     article{
         width: 500px;
-        
+    }
+    article h1{
+        text-align: left;
+        margin-left: 50px;
     }
     .menu,.word-ocult,.word-ocult1{
 
